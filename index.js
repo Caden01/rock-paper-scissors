@@ -16,8 +16,8 @@ function capitalizeLetter(string) {
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase();
     computerSelection = getComputerChoice().toLowerCase();
-    console.log(playerSelection);
-    console.log(computerSelection);
+    console.log(`You picked: ${playerSelection}`);
+    console.log(`Computer picked: ${computerSelection}`);
 
     if (playerSelection === computerSelection) {
         return console.log("Draw!");
