@@ -30,6 +30,7 @@ function playRound(playerSelection, computerSelection) {
         playerScore++;
         winner = "player";
         return console.log(`You won this round! ${capitalizeLetter(playerSelection)} beats ${capitalizeLetter(computerSelection)}`);
+        
     }
     else if (
         (computerSelection === "rock"  && playerSelection === "scissors") ||
@@ -50,6 +51,7 @@ function game() {
         const playerSelection = prompt("Enter rock, paper or scissors");
         const computerSelection = getComputerChoice();
         playRound(playerSelection, computerSelection);
+        console.log(`You: ${playerScore} Computer: ${computerScore}`);
         
         if (playerScore == 5 || computerScore == 5) {
             break; 
